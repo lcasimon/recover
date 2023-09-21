@@ -1,0 +1,23 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1694812110
+<< metal2 >>
+rect -518 2678 -40 2712
+rect -518 2550 -22 2678
+rect -630 1960 -564 2156
+rect -630 1936 -460 1960
+rect -626 1900 -460 1936
+rect -626 1880 -454 1900
+rect -546 462 -454 1880
+rect -184 328 -22 2550
+rect -450 240 -2 328
+use sky130_fd_pr__nfet_01v8_CBEAYX  sky130_fd_pr__nfet_01v8_CBEAYX_0
+timestamp 1694812110
+transform 1 0 -515 0 1 249
+box -246 -360 246 360
+use sky130_fd_pr__pfet_01v8_TMZ9Y6  sky130_fd_pr__pfet_01v8_TMZ9Y6_0
+timestamp 1694812110
+transform 1 0 -597 0 1 2674
+box -246 -669 246 669
+<< end >>

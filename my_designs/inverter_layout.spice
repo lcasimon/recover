@@ -1,0 +1,17 @@
+* NGSPICE file created from inverter_layout.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_TMZ9Y6
+X0 a_50_n450# a_n50_n547# a_n108_n450# w_n246_n669# sky130_fd_pr__pfet_01v8 ad=1.3 pd=9.58 as=1.3 ps=9.58 w=4.5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_CBEAYX a_n210_n324#
+X0 a_50_n150# a_n50_n238# a_n108_n150# a_n210_n324# sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.58 as=0.435 ps=3.58 w=1.5 l=0.5
+.ends
+
+
+* Top level circuit inverter_layout
+
+Xsky130_fd_pr__pfet_01v8_TMZ9Y6_0 sky130_fd_pr__pfet_01v8_TMZ9Y6
+Xsky130_fd_pr__nfet_01v8_CBEAYX_0 VSUBS sky130_fd_pr__nfet_01v8_CBEAYX
+.end
+
