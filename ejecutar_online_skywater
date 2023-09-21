@@ -1,0 +1,28 @@
+Para usar la máquina en línea Efabless
+cd $HOME
+mkdir my-local-design-files
+export DESIGNS=$HOME/my-local-design-files
+docker pull efabless/foss-asic-tools:latest
+docker run -it -p 80:80 --user $(id -u):$(id -g) -v $DESIGNS:/foss/designs efabless/foss-asic-tools:latest bash
+Entrar a la siguiente página:
+http://localhost
+password: abc123
+
+
+
+Para usar con ambiente CONDA
+Una vez instalado conda, se debe ejecutar la siguiente linea para cada diseño:
+source $HOME/eda/unic-cass/bin/activate
+mkdir -p eda/project
+export PDK=sky130A
+cd eda/project
+cp -a $PDK_ROOT/$PDK/libs.tech/xschem/xschemrc .
+xschem &
+
+Para usar el ambiente iic-osic-tools
+La primera vez
+$ git clone --depth=1 https://github.com/iic-jku/iic-osic-tools.git
+./start_x.sh 
+
+$ docker start iic-osic-tools_xserver_uid_1000
+$ docker rm iic-osic-tools_xserver_uid_1000
